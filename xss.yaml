@@ -1,0 +1,7 @@
+rules:
+  - id: xss-detection
+    message: XSS detected
+    severity: WARNING
+    languages: [php]
+    pattern: |
+      echo $_REQUEST[...];
